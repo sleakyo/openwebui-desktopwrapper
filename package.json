@@ -1,0 +1,31 @@
+{
+  "name": "openwebui-desktop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --mac"
+  },
+  "build": {
+    "appId": "chat.sleaky.desktop",
+    "productName": "Open WebUI",
+    "mac": {
+      "category": "public.app-category.productivity",
+      "target": "dir",
+      "icon": "media/openwebui-icon.icns",
+      "identity": null
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^40.6.0",
+    "electron-builder": "^26.8.1"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1"
+  }
+}
